@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gabriel ❤️ Melissa</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:#080808;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(
+180deg,
+#8b0000,
+#080808
+);
+}
+
+h1{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.quote{
+font-size:1.2rem;
+max-width:700px;
+line-height:1.8;
+margin-bottom:20px;
+}
+
+.date{
+color:#ff4d4d;
+font-size:1.1rem;
+}
+
+.section{
+padding:60px 20px;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#111;
+padding:25px;
+border-radius:20px;
+margin-bottom:25px;
+}
+
+h2{
+color:#ff4d4d;
+margin-bottom:15px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:15px;
+}
+
+footer{
+text-align:center;
+padding:60px 20px;
+}
+
+.final{
+font-size:1.5rem;
+font-style:italic;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<h1>Gabriel ❤️ Melissa</h1>
+
+<div class="quote">
+If I could choose again, I would choose you.<br><br>
+
+And if I had a hundred lives, I would search for you in every single one of them.
+</div>
+
+<div class="date">
+Desde 25/10/2025 🖤
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="card">
+<h2>🎵 Nossa Música</h2>
+
+<p>
+Young and Beautiful<br>
+Lana Del Rey
+</p>
+</div>
+
+<div class="card">
+<h2>⏳ Nosso Tempo Juntos</h2>
+
+<p id="contador"></p>
+</div>
+
+<div class="card">
+<h2>📸 Nossas Memórias</h2>
+
+<div class="gallery">
+
+<div>
+<img src="foto1.jpg">
+<p>Onde a nossa história começou.</p>
+</div>
+
+<div>
+<img src="foto2.jpg">
+<p>Seu sorriso se tornou o meu lugar favorito.</p>
+</div>
+
+<div>
+<img src="foto3.jpg">
+<p>Entre milhões de pessoas, eu encontrei você.</p>
+</div>
+
+<div>
+<img src="foto4.jpg">
+<p>Os momentos mais simples se tornaram os mais especiais.</p>
+</div>
+
+<div>
+<img src="foto5.jpg">
+<p>E se eu tivesse cem vidas, escolheria você em cada uma delas.</p>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<h2>💌 Para Gabriel</h2>
+
+<p>
+Meu amor, Gabriel,<br><br>
+
+Desde o dia 25 de outubro de 2025, minha vida ganhou um significado diferente.<br><br>
+
+Você chegou de forma tão natural que, sem perceber, se tornou parte dos meus pensamentos, dos meus sonhos e dos meus dias.<br><br>
+
+Você é o meu conforto nos dias difíceis, a minha felicidade nos dias bons e a pessoa que faz tudo parecer mais bonito.<br><br>
+
+Às vezes eu me pergunto como tive tanta sorte de encontrar alguém como você.<br><br>
+
+If I could choose again, I would choose you.<br><br>
+
+And if I had a hundred lives, I would search for you in every single one of them.<br><br>
+
+Obrigado por existir, por me fazer sorrir e por fazer parte da minha história.<br><br>
+
+Eu te amo hoje, amanhã e em todos os dias que ainda virão.<br><br>
+
+Com todo o meu amor,<br><br>
+
+Melissa ❤️
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="final">
+"Will you still love me when I'm no longer young and beautiful?"
+</div>
+
+<br>
+
+❤️ Melissa
+
+</footer>
+
+<script>
+
+const inicio = new Date("2025-10-25T00:00:00");
+
+function atualizar(){
+
+const agora = new Date();
+
+const diferenca = agora - inicio;
+
+const dias = Math.floor(diferenca / (1000*60*60*24));
+
+document.getElementById("contador").innerHTML =
+dias + " dias juntos ❤️";
+
+}
+
+setInterval(atualizar,1000);
+
+atualizar();
+
+</script>
+
+</body>
+</html>
