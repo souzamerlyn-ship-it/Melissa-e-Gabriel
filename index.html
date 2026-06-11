@@ -7,6 +7,41 @@
 <title>Gabriel ❤️ Melissa</title>
 
 <style>
+  .spotify-player{
+background:#121212;
+border-radius:20px;
+padding:25px;
+box-shadow:0 0 20px rgba(139,0,0,.5);
+text-align:center;
+}
+
+.album-cover{
+width:220px;
+height:220px;
+margin:auto;
+border-radius:20px;
+background:linear-gradient(135deg,#8b0000,#1a0000);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:80px;
+margin-bottom:20px;
+box-shadow:0 0 30px rgba(255,0,0,.3);
+}
+
+.music-info h2{
+margin-bottom:5px;
+color:white;
+}
+
+.music-info p{
+color:#b3b3b3;
+margin-bottom:20px;
+}
+
+audio{
+width:100%;
+}
 *{
 margin:0;
 padding:0;
@@ -113,13 +148,21 @@ Desde 25/10/2025 🖤
 
 <section class="section">
 
-<div class="card">
-<h2>🎵 Nossa Música</h2>
+<div class="card spotify-player">
 
-<p>
-Young and Beautiful<br>
-Lana Del Rey
-</p>
+<div class="album-cover">
+🖤
+</div>
+
+<div class="music-info">
+<h2>Young and Beautiful</h2>
+<p>Lana Del Rey</p>
+</div>
+
+<audio controls loop>
+<source src="musica.mp3" type="audio/mpeg">
+</audio>
+
 </div>
 
 <div class="card">
